@@ -65,6 +65,13 @@ html, body {
     margin: 10px 0 0 0;
     font-size: 12px;
 }
+.languagesFlex {
+    display: flex;
+    justify-content: space-between;
+}
+.dotsDiv {
+    margin: 8px 80px 0 0;
+}
 .void {
     height: 10px;
     width: 10px;
@@ -113,19 +120,14 @@ html, body {
 .contactIcon a {
     color: var(--mainColor);
 }
-#emailLink:hover {
+.contactIcon i {
+    font-size: 18px;
+}
+.socialLink {
+    text-decoration: none;
+}
+.socialLink:hover {
     color: #37424b;
-}
-#linksIconsContainer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-#linksIconsContainer a {
-    font-size: 30px;
-}
-#linksIconsContainer a:hover {
-    transform: scale(1.1)
 }
 /* content containers */
 .contentTitle {
