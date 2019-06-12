@@ -19,6 +19,7 @@ html, body {
     background: var(--mainColor);
     display: flex;
     flex-direction: row;
+    padding-bottom: 20px;
 }
 #infoContainer {
     flex: 3;
