@@ -8,8 +8,8 @@ html, body {
     box-sizing: border-box;
 }
 :root {
-    --mainColor: #657B8B;
-    --secColor: #FFEEDD;
+    --mainColor: #fcedde;
+    --secColor: #657B8B;
 }
 
 #mainContainer {
@@ -34,7 +34,8 @@ html, body {
 #contentContainer {
     flex: 5;
     padding: 20px 38px;
-    color: #FEFEFE;
+    /* color: #FEFEFE; */
+    color: #444;
 }
 
 /* info containers */
@@ -76,7 +77,7 @@ html, body {
 .void {
     height: 10px;
     width: 10px;
-    background-color: #CCC;
+    background-color: #919191;
     border-radius: 50%;
     display: inline-block;
 }
