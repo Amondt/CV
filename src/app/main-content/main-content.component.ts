@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main-content',
-  templateUrl: './main-content.component.html',
-  styleUrls: ['./main-content.component.scss']
+    selector: 'app-main-content',
+    templateUrl: './main-content.component.html',
+    styleUrls: ['./main-content.component.scss'],
 })
 export class MainContentComponent implements OnInit {
+    timelines = [
+        {
+            title: 'experiences',
+        },
+        {
+            title: 'studies & trainings',
+        },
+    ];
 
-  constructor() { }
+    skillLists = [
+        {
+            title: 'hard skills',
+        },
+        {
+            title: 'soft skills',
+        },
+    ];
 
-  ngOnInit(): void {
-  }
+    constructor() {}
 
+    ngOnInit(): void {}
 }

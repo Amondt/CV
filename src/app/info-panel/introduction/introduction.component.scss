@@ -11,7 +11,15 @@
 }
 
 .name {
-    color: var(--secondTextColor);
+    color: var(--secondaryTextColor);
     text-align: center;
     font-size: 1.7em;
+}
+
+.employment {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
 }

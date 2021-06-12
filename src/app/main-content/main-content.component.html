@@ -1,6 +1,10 @@
 <main>
-    <app-timeline></app-timeline>
-    <app-timeline></app-timeline>
-    <app-list></app-list>
-    <app-list></app-list>
+    <app-timeline
+        *ngFor="let timeline of timelines"
+        [title]="timeline.title"
+    ></app-timeline>
+    <app-list
+        *ngFor="let skillList of skillLists"
+        [title]="skillList.title"
+    ></app-list>
 </main>

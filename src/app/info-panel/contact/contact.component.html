@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<app-title type="sub" [content]="title"></app-title>
+
+<div *ngFor="let field of contactFields" class="contact-fields-container">
+    <app-icon [icon]="field.icon" [altIcon]="field.name"></app-icon>
+    <div *ngIf="field.linkType; else elseBlock">
+        <a [href]="getLink(field.linkType, field.value)" target="_blank">
+            <p class="contact-field-value">{{ field.value }}</p>
+        </a>
+    </div>
+    <ng-template #elseBlock>
+        <p class="contact-field-value">{{ field.value }}</p>
+    </ng-template>
+</div>

@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+    selector: 'app-list',
+    templateUrl: './list.component.html',
+    styleUrls: ['./list.component.scss'],
 })
 export class ListComponent implements OnInit {
+    @Input() title!: string;
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

@@ -1,0 +1,19 @@
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: #dbdbdb;
+    }
+}
+
+.contact-fields-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-field-value {
+    font-size: 12px;
+    margin: 0 0 0 10px;
+}

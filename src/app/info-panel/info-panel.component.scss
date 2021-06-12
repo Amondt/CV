@@ -1,5 +1,7 @@
 aside {
-    background-color: #244049;
+    background-color: var(--primaryColor);
+    color: var(--secondaryTextColor);
     width: 8cm;
     height: 100%;
+    overflow: hidden;
 }
