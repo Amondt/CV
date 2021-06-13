@@ -1,4 +1,16 @@
-.title {
+.sub-title {
     margin-left: 26px;
     margin-top: 60px;
+}
+
+.main-title {
+    color: var(--secondaryColor);
+    font-weight: 400;
+    font-size: 1.4em;
+    border: 1.5px solid var(--secondaryColor);
+    border-right: none;
+    border-radius: 22px 0 0 22px;
+    padding: 6px 20px;
+    width: 60%;
+    margin-left: auto;
 }

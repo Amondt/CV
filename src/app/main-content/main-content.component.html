@@ -2,9 +2,11 @@
     <app-timeline
         *ngFor="let timeline of timelines"
         [title]="timeline.title"
+        [items]="timeline.items"
     ></app-timeline>
     <app-list
         *ngFor="let skillList of skillLists"
         [title]="skillList.title"
+        [items]="skillList.subCategories"
     ></app-list>
 </main>

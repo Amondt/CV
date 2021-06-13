@@ -1,1 +1,3 @@
-<h3 class="title">{{ content | titlecase }}</h3>
+<h3 [ngClass]="{ 'sub-title': type === 'sub', 'main-title': type === 'main' }">
+    {{ type === "sub" ? (content | titlecase) : (content | uppercase) }}
+</h3>

@@ -1,1 +1,7 @@
 <app-title type="main" [content]="title"></app-title>
+
+<div *ngFor="let item of items" style="display: flex">
+    <span>{{ item.title }}</span>
+    <span>{{ item.subject }}</span>
+    <span>{{ item.dates }}</span>
+</div>

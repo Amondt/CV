@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { skillListSubcategoryItem } from '../main-content.component';
 
 @Component({
     selector: 'app-list',
@@ -7,8 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
     @Input() title!: string;
+    @Input() items!: skillListSubcategoryItem[];
+    // @Input() items!: any;
 
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        console.log(this.items);
+    }
 }

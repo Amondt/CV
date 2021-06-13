@@ -1,1 +1,6 @@
 <app-title type="main" [content]="title"></app-title>
+
+<div *ngFor="let item of items">
+    <h4 *ngIf="item.title">{{ item.title }}</h4>
+    <span *ngFor="let item of item.items">{{ item }}</span>
+</div>
