@@ -1,1 +1,12 @@
 <app-title type="sub" [content]="title"></app-title>
+
+<div class="hobbies-container">
+    <div *ngFor="let hobby of hobbies" class="hobby">
+        <app-icon
+            [icon]="hobby.icon"
+            [altIcon]="hobby.name"
+            type="big"
+        ></app-icon>
+        <p class="hobby-name">{{ hobby.name }}</p>
+    </div>
+</div>

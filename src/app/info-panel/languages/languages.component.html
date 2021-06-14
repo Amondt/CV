@@ -1,1 +1,10 @@
 <app-title type="sub" [content]="title"></app-title>
+
+<div *ngFor="let language of languages" class="language-row">
+    <span class="language-name">{{ language.name }}</span>
+    <span
+        *ngFor="let i of maxNumberOfSkillBullets; let index = index"
+        class="skill-bullet"
+        [ngClass]="{ 'skill-bullet--filled': index < language.skillLevel }"
+    ></span>
+</div>

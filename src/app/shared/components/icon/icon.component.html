@@ -1,3 +1,9 @@
-<span class="icon-container">
+<span
+    class="icon-container"
+    [ngClass]="{
+        'icon-container--aside': type === 'smallAside',
+        'icon-container--big': type === 'big'
+    }"
+>
     <img [src]="icon" [alt]="altIcon + ' icon'" class="icon" />
 </span>

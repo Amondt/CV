@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguagesComponent implements OnInit {
     title = 'languages';
+    languages = [
+        { name: 'French', skillLevel: 6 },
+        { name: 'English', skillLevel: 6 },
+        { name: 'Dutch', skillLevel: 3 },
+    ];
+    maxNumberOfSkillBullets = new Array(6);
 
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        console.log(this.maxNumberOfSkillBullets);
+    }
 }
