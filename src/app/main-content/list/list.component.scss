@@ -5,8 +5,25 @@
 }
 
 .items-container {
-    // flex: calc(100% / 3);
-    flex-basis: 50%;
+    &--subtitle {
+        flex-basis: 50%;
+
+        .sub-items-container {
+            padding-left: 3rem;
+        }
+    }
+
+    &--no-subtitle {
+        .sub-items-container {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 1.2rem;
+        }
+
+        .sub-item {
+            flex: calc(100% / 3);
+        }
+    }
 }
 
 .sub-title {
@@ -15,7 +32,6 @@
 
 .sub-items-container {
     margin: 0;
-    padding-left: 3rem;
     list-style: none;
 }
 
@@ -29,7 +45,7 @@
         height: 1rem;
         width: 1rem;
         top: 0.1rem;
-        left: -2rem;
+        left: -1.6rem;
         background: url("/assets/icons/chevron-right.svg");
         background-position: center;
     }

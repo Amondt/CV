@@ -120,6 +120,7 @@ export class MainContentComponent implements OnInit {
                         'Flexible',
                         'Self-motivated',
                         'Self-employed',
+                        'Open Minded',
                     ],
                 },
             ],
