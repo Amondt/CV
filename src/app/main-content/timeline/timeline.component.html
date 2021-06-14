@@ -1,7 +1,12 @@
 <app-title type="main" [content]="title"></app-title>
 
-<div *ngFor="let item of items" style="display: flex">
-    <span>{{ item.title }}</span>
-    <span>{{ item.subject }}</span>
-    <span>{{ item.dates }}</span>
+<div class="timeline-container">
+    <div *ngFor="let item of items" style="display: flex" class="timeline-item">
+        <span class="dates">{{ item.dates }}</span>
+
+        <div class="details-container">
+            <span class="title">{{ item.title }}</span>
+            <span class="subject">{{ item.subject }}</span>
+        </div>
+    </div>
 </div>

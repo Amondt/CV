@@ -1,0 +1,36 @@
+.list-container {
+    margin-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-container {
+    // flex: calc(100% / 3);
+    flex-basis: 50%;
+}
+
+.sub-title {
+    margin: 1rem 0;
+}
+
+.sub-items-container {
+    margin: 0;
+    padding-left: 3rem;
+    list-style: none;
+}
+
+.sub-item {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        top: 0.1rem;
+        left: -2rem;
+        background: url("/assets/icons/chevron-right.svg");
+        background-position: center;
+    }
+}
